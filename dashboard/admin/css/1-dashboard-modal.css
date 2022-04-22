@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+html{
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+.new-job{
+  border:none;
+  border-radius: 10px;
+  width: 28vw;
+  height: 68vh;
+  animation: drop .3s ease-in-out;
+}
+
+
+
+.new-job::backdrop{
+  background-color: none;
+}
+
+@keyframes drop {
+  0%{
+    transform: scale(0);
+    opacity: 0;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.add_job button{
+  font-family: Montserrat;
+  width: 13vw;
+  border: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  background-image: linear-gradient(0deg,#00D4FF, #58E2FF);
+  padding-top: .8rem;
+  padding-bottom: .8rem;
+  font-size: .6rem;
+  border-radius: 20px;
+  transition: color .2s ease;
+  cursor: pointer;
+  outline: none;
+}
+
+.add_job button:hover{
+  color: black;
+}
+
+.new-job form{
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.new-job form .close-button{
+  font-size: 1.5rem;
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  color: #888888;
+}
+
+.new-job form .close-button:hover{
+  color: red;
+}
+
+.new-job form:first-child{
+  margin-top: 1rem;
+}
+
+.new-job form *:not(1){
+  font-family: Montserrat;
+}
+
+
+.submit-new-job{
+  font-family: Montserrat;
+  background-color: #00D4FF;
+  font-size: .6rem;
+  margin: 0 6rem;
+  margin-top: .5rem;
+  border: none;
+  padding: 1rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 10px;
+  color: white;
+  transition: .2s ease-in-out;
+}
+
+.submit-new-job:active{
+  transform: scale(.90);
+}
+
+.submit-new-job:hover{
+  color: black;
+}
+
+.new-job form label{
+  font-size: .75rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: .2rem 0;
+  margin-left: .5rem;
+  color: #888888;
+}
+
+.new-job form textarea{
+  padding-top: .5rem;
+  max-height: 12vh;
+  border: none;
+  background-color: #EDFCFF;
+  border-radius: 10px;
+  text-indent: 5px;
+  outline-color: #00D4FF;
+  margin-bottom: .5rem;
+}
+
+.new-job form input{
+  outline-color: #00D4FF;
+  border-radius: 10px;
+  border:none;
+  padding: .5rem 0;
+  background-color: #EDFCFF;
+  text-indent: 10px;
+  margin-bottom: .5rem;
+}
+
+input::placeholder{
+  font-size: 0.5rem;
+  color: #B8B8B8;
+}
+
+
+@media (max-width: 900px) {
+  .add_job button{
+    width: 180px;
+  }
+}

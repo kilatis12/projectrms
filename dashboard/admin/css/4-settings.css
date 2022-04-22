@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+
+
+html{
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+
+
+body{
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+
+.logo a{
+  text-decoration: none;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #00D4FF;
+}
+
+.navigations{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+nav{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  list-style: none;
+}
+
+li a{
+  font-size: .70rem;
+  text-decoration: none;
+  color: #888888;
+  line-height: 45px;
+  font-weight: bold;
+
+}
+
+a{
+  width: 13vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout:hover{
+  color: #FF0055;
+}
+
+a:hover:not(.logo a, .logout,.add_job a){
+  color: #00D4FF;
+}
+
+/*-------------------------------------------------------------------contents----------------------------------------------------*/
+
+.content{
+  background-color:;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction:column;
+  max-height: 100vh;
+  overflow-y: scroll;
+  background-image: url(../images/admin-bg.svg);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 850px;
+
+}
+
+.content .title{
+  margin-top: 1rem;
+  color: #888888;
+  font-size: .6rem;
+  text-transform: uppercase;
+}
+
+.title h1 i{
+  margin-right: .4rem;
+  font-size: 1.8rem;
+  color: #00D4FF;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.create-admin h1{
+  margin: 2rem 2rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.create-admin form{
+  margin: 1rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.create-admin form label{
+  color: #888888;
+  font-size: .75rem;
+  margin-left: .5rem;
+  margin-top: .5rem;
+  margin-bottom: .2rem;
+}
+
+.create-admin form input{
+  width: 20vw;
+  height: 4.5vh;
+  background-color: #EBF5FB;
+  border: none;
+  outline: none;
+  text-indent: .5rem;
+  border-radius: 10px;
+}
+
+.create-admin form button{
+  margin-top: .8rem;
+  width: 8rem;
+  background-color: #00D4FF;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-family: Montserrat;
+  font-size: .65rem;
+  height: 4.5vh;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.create-admin form button:hover{
+  color: black;
+}
+
+.create-admin form button:active{
+  transform: scale(.95);
+}
+
+
+.admins h1{
+  font-size: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.head td{
+  font-weight: bold;
+  font-size: .8rem;
+  color: black;
+}
+
+.admins table tr{
+  width: 15vw;
+  font-size: .65rem;
+  color: #888888;
+}
+
+.admins table tr td{
+  width: 15vw;
+}

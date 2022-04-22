@@ -1,0 +1,785 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+
+
+html{
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: Calibri;
+}
+
+
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+.weblogo{
+  color: #6187FF;
+  margin: 0;
+  padding: 0;
+  font-family: Cookie;
+
+}
+
+
+.navbar{
+  position: relative;
+  font-family: Montserrat, sans-serif;
+  position:relative;
+  z-index: 1;
+  background-color: white;
+  width: 100%;
+  margin-top: .8rem;
+  margin-bottom: .8rem;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+}
+
+
+
+.navbutton{
+  font-weight: bold;
+  cursor: pointer;
+  float: right;
+  text-align: justify;
+  text-decoration: none;
+  font-style: normal;
+  font-size: .8rem;
+  color: #000A7E;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  border-width: 1px;
+  border-style: solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-color: rgba(255, 255, 255, 0);
+}
+
+.navbutton.active{
+  color: white;
+  background-color: #6187FF;
+  transition: all 0.3s;
+
+}
+
+.navbutton:hover{
+  color: white;
+  background-color: #6187FF;
+}
+
+.logout{
+  padding: 0;
+  margin: 0;
+}
+
+.logout input{
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  border: none;
+  padding: .8rem;
+}
+
+.logout input:hover{
+  background-color: #FF0055;
+  color: white;
+}
+
+#btn{
+  display: none;
+}
+
+
+
+/* -------------------------------------------- JOB AVAILABLE ------------------------------------------ */
+
+.title-tab{
+  letter-spacing: -1px;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: black;
+  transition: .5s;
+
+}
+
+.title-tab:hover{
+  color: #6187FF;
+}
+
+hr{
+  height: 5px;
+  background-color: #F0F4FF;
+  border: none;
+}
+
+.tab{
+  text-align: center;
+  background-color: white;
+  min-height: 71vh;
+  padding-top: .2rem;
+  padding-bottom: .5rem;
+}
+
+
+.tab-content{
+  padding: 2rem 0;
+  background-color: #F0F4FF;
+  font-family: Montserrat, sans-serif;
+
+}
+
+.grid-content{
+  padding: 1rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  align-items: center;
+  justify-items: center;
+
+}
+
+.wrapper-1{
+  position: relative;
+  padding: 0 1.2rem;
+  margin: 1rem 0;
+  width: 25vw;
+  background: linear-gradient(75deg, #0095C5, #001257,  #280e2d);
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 37s ease infinite;
+  -moz-animation: AnimationName 37s ease infinite;
+  animation: AnimationName 37s ease infinite;
+  transition: .3s ease;
+  text-align: left;
+  display: flex;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:1% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:1% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:1% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:1% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:1% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:1% 0%}
+}
+
+.wrapper-1:hover{
+  box-shadow: 0 10px 1rem .2rem rgba(141, 141, 141, 0.6);
+}
+
+.contents-1{
+  margin: 1rem 0;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.contents-1 span{
+  display: inline-block;
+  white-space: nowrap;
+  max-height: 10ex;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width:30ch;
+}
+
+
+.contents-1 *:not(.view){
+  color: white;
+  font-size: 1.8ch;
+  margin: .2rem 1rem;
+
+}
+
+.view{
+  background-color: #6187FF;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  padding: .5rem 1rem;
+  margin-left: 0;
+  transform: scale(1);
+  transition: all .3s ease;
+}
+
+.view:hover{
+  background-color: #91ABFF;
+}
+
+.view:active{
+  transform: scale(.95);
+  background-color: #3F6CFF;
+}
+
+
+/* -------------------------------------------- JOB APPLICATIONS ------------------------------------------ */
+
+.wrapper-2{
+  margin: 1rem 5rem;
+  background: linear-gradient(90deg, #001257, #0095C5, #280e2d);
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 37s ease infinite;
+  -moz-animation: AnimationName 37s ease infinite;
+  animation: AnimationName 37s ease infinite;
+  transition: .3s ease;
+  color: white;
+}
+
+.wrapper-2:hover{
+  box-shadow: 0 5px 1rem .2rem rgba(141, 141, 141, 0.6);
+}
+
+.contents-2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.contents-2 *:not(.view1){
+  font-size: 2ch;
+  margin: 0 .5rem;
+}
+
+
+.view1{
+  margin: 1rem 0;
+  background-color: white;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  color: #FF0055;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  padding: .5rem 1rem;
+  transform: scale(1);
+}
+
+.view1:hover{
+  color: white;
+  background-color: #FF0055;
+
+}
+
+.view1:active{
+  transform: scale(.95);
+}
+
+
+/* -------------------------------------------- PROFILE SETTINGS ------------------------------------------ */
+
+.tab-profile{
+  text-align: center;
+}
+
+.grid-content-1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  padding: 2rem 5rem;
+
+}
+
+.wrapper-3{
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1.5rem;
+  border-left: 2.5px solid #6187FF;
+
+}
+
+.wrapper-4{
+  height: 8rem;
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1.5rem;
+  border-left: 2.5px solid #6187FF;
+}
+
+.contents-3{
+  text-align: left;
+  color: #6187FF;
+}
+
+.resume label{
+  font-size: .9rem;
+  font-weight: bold;
+  font-family: Montserrat, sans-serif;
+}
+
+.file-upload{
+  font-size: .8rem;
+  color: white;
+  background-color: #91ABFF;
+  font-family: Montserrat, sans-serif;
+  border-radius: 15px 0 15px 15px;
+  width: 18rem;
+  height: 1.9rem;
+}
+
+::-webkit-file-upload-button{
+  font-family: Montserrat, sans-serif;
+  margin: .2rem .2rem;
+  padding: 0 1rem;
+  color: white;
+  background-color: #001257;
+  height: 1.5rem;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: .2s ease;
+}
+
+::-webkit-file-upload-button:hover{
+  background-color: #6187FF;
+}
+
+.resume button{
+  font-size: .8rem;
+  font-weight: bold;
+  color: white;
+  background-color: #001257;
+  font-family: Montserrat, sans-serif;
+  height: 1.9rem;
+  outline: none;
+  border: none;
+  border-radius: 15px 15px 15px 15px;
+  cursor: pointer;
+  transition: .2s ease;
+  padding: .5rem 1rem;
+}
+
+.resume button:hover{
+  background-color: #6187FF;
+  color: white;
+}
+
+.resume button:active{
+  transform: scale(.95);
+}
+
+.deletebutton{
+  background-color: white;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  padding: .3rem .8rem;
+  margin-left: -.5rem;
+  font-size: .8rem;
+  color: #FF0055;
+}
+
+.deletebutton:hover{
+  background-color: #FF0055;
+  color: white;
+}
+
+.deletebutton:active{
+  transform: scale(.95);
+}
+
+
+
+
+/* -------------------------------------------- Footer ------------------------------------------ */
+
+
+footer{
+  display: relative;
+  bottom: 0;
+  background-color: #1C284C;
+  text-align: center;
+  padding: .2rem .5rem;
+  color: white;
+}
+
+footer p{
+  font-family: helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: .7rem;
+}
+
+/* -------------------------------------------- data content ------------------------------------------ */
+
+[data-tab-content]{
+  display: none;
+}
+
+.active[data-tab-content]{
+  display: block;
+}
+
+/*------------------------------------------ Custom scrollbar ----------------------------------------------*/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* --------------------------------------------------- Background animation -----------------------------------*/
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:1% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:1% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:1% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:1% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:1% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:1% 0%}
+}
+
+
+/*------------------------------------------- MEDIA QUERY -------------------------------------------------*/
+
+@media (max-width: 1024px){
+  .contents-1 *:not(.view) {
+    color: white;
+    font-size: 1.5ch;
+    margin: 0.2rem 1rem;
+  }
+  .contents-1 span {
+    display: inline-block;
+    white-space: nowrap;
+    max-height: 10ex;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 25ch;
+  }
+}
+
+
+@media (max-width: 900px) {
+
+  html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    overflow-x:hidden;
+    font-family: Calibri;
+  }
+
+
+
+  body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+
+
+  /* JOB AVAILABLE*/
+
+  .tab-content{
+    overflow-x: hidden;
+  }
+
+
+  .grid-content{
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .wrapper-1{
+    position: relative;
+    padding: 0 1.2rem;
+    margin: 1rem 0;
+    width: 250px;
+  }
+
+  .contents-1 *:not(.view){
+    font-size: 1.6ch;
+  }
+
+  .view{
+    font-size: 1ch;
+  }
+
+  .contents-1 span{
+    width:25ch;
+  }
+
+
+
+  /* JOB APPLICATION*/
+
+  .wrapper-2{
+    margin: 1rem 1rem;
+  }
+
+
+  .contents-2 *:not(.view1){
+    font-size: 1ch;
+  }
+
+
+  .view1{
+    font-size: 1.2ch;
+  }
+
+
+  /* PROFILE SETTINGS*/
+
+  .tab-profile{
+    text-align: center;
+  }
+
+  .grid-content-1{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 2rem 2.5rem;
+
+  }
+
+  .wrapper-3{
+    display: flex;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+    border-left: 2.5px dashed #6187FF;
+
+  }
+
+  .wrapper-4{
+    height: 8rem;
+    display: flex;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+    border-left: 2.5px dashed #6187FF;
+  }
+
+  .contents-3{
+    text-align: left;
+    color: #6187FF;
+  }
+
+  .resume label{
+    font-size: .9rem;
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+  }
+  
+
+  .file-upload{
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+    font-size: .8rem;
+    color: white;
+    background-color: #91ABFF;
+    font-family: Montserrat, sans-serif;
+    border-radius: 15px 0 15px 15px;
+    width: 12rem;
+    height: 1.9rem;
+  }
+
+  ::-webkit-file-upload-button{
+    font-family: Montserrat, sans-serif;
+    margin: .2rem .2rem;
+    padding: 0 1rem;
+    color: white;
+    background-color: #001257;
+    height: 1.5rem;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: .2s ease;
+  }
+
+  ::-webkit-file-upload-button:hover{
+    background-color: #6187FF;
+  }
+
+  .resume button{
+    font-size: .6rem;
+    font-weight: bold;
+    color: white;
+    background-color: #001257;
+    font-family: Montserrat, sans-serif;
+    height: 1.5rem;
+    margin-left: .2rem;
+    outline: none;
+    border: none;
+    border-radius: 15px 15px 15px 15px;
+    cursor: pointer;
+    transition: .2s ease;
+    padding: 0 1rem;
+  }
+
+  .resume button:hover{
+    background-color: #6187FF;
+    color: white;
+  }
+
+  .resume button:active{
+    transform: scale(.95);
+  }
+
+}
+
+@media (max-width: 650px) {
+  #btn{
+    display: block;
+    position: relative;
+    background-color: transparent;
+    height: 35px;
+    width: 50px;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  #btn:hover i{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    animation: float 1.5s linear forwards infinite;
+  }
+
+  .view{
+    font-size: .5rem;
+  }
+
+  @keyframes float {
+    0%{
+      top: 40%;
+    }
+    25%{
+      top: 45%;
+    }
+    50%{
+      top: 50%;
+    }
+    75%{
+      top: 45%;
+    }
+    100%{
+      top: 40%;
+    }
+  }
+
+  #btn:hover{
+    color: #6187FF;
+  }
+
+  #btn.active i{
+    color: #FF0055;
+    animation-play-state: paused;
+  }
+
+  .navbuttons{
+    display: none;
+    box-shadow: inset 0px 0px 2px grey;
+    border-radius: 10px;
+  }
+
+  .navbuttons .navbutton{
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    text-align: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  .navbuttons.active{
+    position: absolute;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    top: 100%;
+    background-color: white;
+  }
+
+  .wrapper-2{
+    margin: 1rem 1rem;
+  }
+
+
+  .contents-2 *:not(.view1){
+    font-size: .6ch;
+  }
+
+
+  .view1{
+    font-size: 0.8ch;
+  }
+
+}
+
+
+
+/*------------------------------------------- END MEDIA QUERY -------------------------------------------------*/

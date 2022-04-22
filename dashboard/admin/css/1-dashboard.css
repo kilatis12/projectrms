@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+
+html{
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+
+
+body{
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+
+#btn{
+  display: none;
+}
+
+.logo a{
+  text-decoration: none;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #00D4FF;
+}
+
+.navigations{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+nav{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  list-style: none;
+}
+
+li a{
+  font-size: .70rem;
+  text-decoration: none;
+  color: #888888;
+  line-height: 45px;
+  font-weight: bold;
+
+}
+
+a{
+  width: 13vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout:hover{
+  color: #FF0055;
+}
+
+a:hover:not(.logo a, .logout,.add_job a){
+  color: #00D4FF;
+}
+
+
+/*------------------------------------------content------------------------------------------------*/
+
+.content{
+  background-color:;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction:column;
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
+.content .title{
+  margin-top: 1rem;
+  color: #888888;
+  font-size: .6rem;
+  margin-bottom: 1rem;
+}
+
+.title h1 i{
+  font-size: 2rem;
+  color: #00D4FF;
+}
+
+.cards-div{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+
+}
+
+.cards{
+  position: relative;
+  height: 200px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+.cards h1{
+  text-align: center;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  margin-top: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+.cards p{
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 6rem;
+  text-align: center;
+}
+
+.cards:nth-child(1){
+  background-color: #6E89A3;
+  color: white;
+  background-image: url(../images/moon.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cards:nth-child(2){
+  background-color: #9ED0FF;
+  color: white;
+  background-image: url(../images/moon1.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cards:nth-child(3){
+  background-color: #7DB8F0;
+  color: white;
+  background-image: url(../images/moon2.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cards:nth-child(4){
+  background-color: #A37934;
+  color: white;
+  background-image: url(../images/moon3.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/*------------------------------------------table------------------------------------------------*/
+
+.table{
+  margin-top: 2rem;
+  background-color: white;
+  padding: 1rem 1rem;
+  min-height: 40%;
+  max-height: 50%;
+  overflow-y: scroll;
+  box-shadow: inset 0px 0px 5px grey;
+  border-radius: 10px;
+}
+
+table{
+  margin: 1rem 1rem;
+}
+
+
+.table h1{
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  color: #323232;
+}
+
+.table table tr td{
+  width: 200px;
+}
+
+.table table tr{
+  height: 35px;
+  color: #323232;
+  font-size: .65rem;
+}
+
+.head td{
+  font-weight: bold;
+  color: #323232;
+  font-size: .65rem;
+}
+
+#table{
+  margin-bottom: 2rem;
+}
+
+
+@media (max-width: 1100px){
+
+  .cards h1{
+    text-align: center;
+    font-size: .8rem;
+    padding: 0;
+    margin: 0;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+  }
+
+  .cards p{
+    padding: 0;
+    margin: 0;
+    font-size: 5.5rem;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 900px){
+
+  body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+
+  .logo a{
+    margin-top: 0;
+  }
+
+  a{
+    width: 180px;
+  }
+
+  .cards h1{
+    text-align: center;
+    font-size: .6rem;
+    padding: 0;
+    margin: 0;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+  }
+
+  .cards p{
+    padding: 0;
+    margin: 0;
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  .navigations{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 2rem;
+    z-index: 1000;
+    background-color: black;
+    transform: translateX(-100%);
+    transition: .8s ease-in-out;
+  }
+
+  .navigations.active{
+    transform: translateX(0);
+  }
+
+  #btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: -15%;
+    background-color: transparent;
+    color: #00D4FF;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: Montserrat;
+    padding: .2rem;
+    height: 40px;
+    transition: .8s ease-in-out;
+  }
+
+  #btn p{
+    opacity: 1;
+    transition: .8s ease;
+  }
+
+  #btn > i{
+    font-size: 1.5rem;
+    margin-right: .2rem;
+    margin-left: .2rem;
+    transition: .8s ease-in-out;
+  }
+
+  #btn.active{
+    right: 45%;
+    background-color: transparent;
+  }
+
+  #btn.active > i{
+    transform: rotate(180deg);
+    color: red;
+  }
+
+  .cards{
+    height: 150px;
+  }
+
+
+@media (max-width: 660px){
+
+  .cards{
+    height: 120px;
+  }
+
+  .cards h1{
+    text-align: center;
+    font-size: .4rem;
+    padding: 0;
+    margin: 0;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+  }
+
+  .cards p{
+    padding: 0;
+    margin: 0;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 500px){
+  .cards h1{
+    text-align: center;
+    font-size: .35rem;
+    padding: 0;
+    margin: 0;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+  }
+
+  .cards p{
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .cards{
+    height: 100px;
+  }
+
+
+  .table h1{
+    margin-left: 1rem;
+    font-size: .5rem;
+    color: #323232;
+  }
+
+
+  .table table tr{
+    height: 35px;
+    color: #323232;
+    font-size: .35rem;
+  }
+
+  .head td{
+    font-weight: bold;
+    color: #323232;
+    font-size: .4rem;
+  }
+
+}

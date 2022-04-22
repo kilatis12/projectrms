@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+
+
+html{
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+
+
+body{
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+
+.logo a{
+  text-decoration: none;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #00D4FF;
+}
+
+.navigations{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+nav{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  list-style: none;
+}
+
+li a{
+  font-size: .70rem;
+  text-decoration: none;
+  color: #888888;
+  line-height: 45px;
+  font-weight: bold;
+
+}
+
+a{
+  width: 13vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout:hover{
+  color: #FF0055;
+}
+
+a:hover:not(.logo a, .logout,.add_job a){
+  color: #00D4FF;
+}
+
+/*-------------------------------------------------------------------contents----------------------------------------------------*/
+
+.content{
+  background-color:;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction:column;
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
+.content .title{
+  margin-top: 1rem;
+  color: #888888;
+  font-size: .65rem;
+  text-transform: uppercase;
+}
+
+.title h1 i{
+  margin-right: .4rem;
+  font-size: 1.5em;
+  color: #00D4FF;
+}
+
+
+.wrapper{
+  margin: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.job-container{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.job-title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.job-title *:not(button){
+  margin: 0 .5rem;
+}
+
+.job-title h1{
+  font-size: 1rem;
+  color: black;
+  text-transform: capitalize;
+}
+
+.job-title form{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.job-title form button{
+  background-color: white;
+  border: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.job-title form button:hover{
+  transform: scale(1.5);
+}
+
+.job-title form select{
+  border-radius: 10px;
+  padding: .2rem;
+}
+
+.applicants{
+  margin: 1rem .5em;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.applicants p{
+  margin: 0 1rem;
+}
+
+.applicants p a{
+  display: inline;
+  margin: 0 .5rem;
+}
+
+.applicants p a i{
+  font-size: 1rem;
+}
+
+.applicants p a i:hover{
+  transform: scale(2);
+}
+
+.status{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.status p{
+  padding: 0;
+  margin: 0;
+  margin-right: .5rem;
+}
+
+.status button{
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-left: .5rem;
+  cursor: pointer;
+}
+
+.status select{
+  border-radius: 10px;
+  outline: none;
+  width: 6.5rem;
+}
+
+.status select option{
+  color: #48C9B0;
+}
+
+.status button:hover{
+  transform: scale(1.5);
+}

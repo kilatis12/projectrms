@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+html{
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: Calibri;
+
+}
+
+
+
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/cloudy.svg);
+  overflow-x: hidden;
+  background-position: bottom;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+  max-width: 100vw;
+}
+
+
+
+.weblogo{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #6187FF;
+  margin: 0;
+  font-family: Cookie;
+  text-align: center;
+}
+
+.details{
+  font-family: Montserrat, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.details *{
+  padding: 0;
+  margin: 0;
+}
+
+.details p{
+  font-family: Montserrat,sans-serif;
+  font-size: .8rem;
+  line-height: 30px;
+  padding: 1rem 1rem;
+  text-align: left;
+  width: 100ch;
+}
+
+.details h1{
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.details h3{
+  padding-top: 2rem;
+}
+
+.more-details{
+  padding: 0;
+  margin: 0;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 2rem;
+  width: 60vw;
+}
+
+.cards-1{
+  width: 20vw;
+}
+
+
+.cards-1 p{
+  width: 30ch;
+  line-height: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.cards-2{
+  width: 20vw;
+}
+
+.cards-2 ul li p{
+  padding: 0;
+  margin: 0;
+  line-height: 1rem;
+}
+
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form label{
+  color: #6187FF;
+  font-family: Cookie;
+  font-size: 2.2rem;
+}
+
+form textarea{
+  height: 30vh;
+  width: 40vw;
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 3px grey;
+
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  font-family: Montserrat, sans-serif;
+    font-size: .8rem;
+}
+
+form button{
+  background-color: #6187FF;
+  color: white;
+  font-weight: bold;
+  font-family: Montserrat, sans-serif;
+  border: none;
+  outline: none;
+  font-size: .8rem;
+  cursor: pointer;
+  width: 10rem;
+  transition: .2s ease;
+}
+
+form button:hover{
+  background-color: #91ABFF;
+}
+
+form button:active{
+  transform: scale(.95);
+}
+
+.coverletterdetails{
+  text-decoration: none;
+  font-size: .75rem;
+  margin-bottom: 1rem;
+  color: #FF0055;
+}
+
+.cancel{
+  border: none;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: .7rem;
+  color: white;
+  background-color: #FF0055;
+  transition: .2s ease;
+}
+
+.cancel:hover{
+  background-color: #FF6095;
+}
+
+.cancel:focus{
+  transform: scale(.95);
+}
+
+
+/* ------------------------------------------------------------------------------------------- */
+
+@media (max-width: 900px){
+  .details h1{
+    text-transform: uppercase;
+    font-size: 2.2rem;
+  }
+  .details h5 {
+    display: block;
+    font-size: 0.6em;
+    font-weight: bold;
+  }
+  .details p {
+    font-family: Montserrat,sans-serif;
+    font-size: .6rem;
+    line-height: 20px;
+    padding: 1rem 1rem;
+    text-align: left;
+    width: 100ch;
+  }
+  .details h3 {
+    font-size: 1rem;
+  }
+
+  .more-details {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    justify-items: start;
+    grid-template-columns: 1fr;
+    margin-bottom: 2rem;
+    min-width: 30vw;
+
+  }
+
+  .cards-1{
+    margin-bottom: 1rem;
+  }
+
+  .cards-1 p{
+    line-height: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  form label {
+    color: #6187FF;
+    font-family: Cookie;
+    font-size: 1.6rem;
+  }
+
+  .coverletterdetails {
+    text-decoration: none;
+    font-size: .6rem;
+    margin-bottom: 1rem;
+    color: #FF0055;
+  }
+
+  form button {
+    font-size: .6rem;
+    width: 8rem;
+
+  }
+    .cancel {
+    font-size: .55rem;
+  }
+}
+
+@media (max-width: 360px){
+  .details h1{
+    text-transform: uppercase;
+    font-size: 1.8rem;
+  }
+  .details h5 {
+    display: block;
+    font-size: 0.45em;
+    font-weight: bold;
+  }
+  .details p {
+    font-family: Montserrat,sans-serif;
+    font-size: .55rem;
+    line-height: 15px;
+    padding: 1rem 1rem;
+    text-align: center;
+    width: 40ch;
+  }
+  .details h3 {
+    font-size: .8rem;
+  }
+
+  .more-details {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    justify-items: start;
+    grid-template-columns: 1fr;
+    margin-bottom: 2rem;
+    min-width: 30vw;
+
+  }
+
+  .cards-1{
+    margin-bottom: 1rem;
+  }
+
+  .cards-1 p{
+    text-align: left;
+    line-height: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .cards-2 p{
+    text-align: left;
+  }
+
+  form label {
+    color: #6187FF;
+    font-family: Cookie;
+    font-size: 1.6rem;
+  }
+
+  form textarea {
+    height: 30vh;
+    width: 70vw;
+    border: none;
+    outline: none;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 3px grey;
+  }
+
+  .coverletterdetails {
+    text-decoration: none;
+    font-size: .6rem;
+    margin-bottom: 1rem;
+    color: #FF0055;
+  }
+
+  form button {
+    font-size: .5rem;
+    width: 6rem;
+
+  }
+    .cancel {
+    font-size: .4rem;
+  }
+
+}

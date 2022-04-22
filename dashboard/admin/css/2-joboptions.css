@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+
+
+html{
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+
+
+body{
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+
+.logo a{
+  text-decoration: none;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #00D4FF;
+}
+
+.navigations{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+nav{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  list-style: none;
+}
+
+li a{
+  font-size: .70rem;
+  text-decoration: none;
+  color: #888888;
+  line-height: 45px;
+  font-weight: bold;
+
+}
+
+a{
+  width: 13vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout:hover{
+  color: #FF0055;
+}
+
+a:hover:not(.logo a, .logout,.add_job a){
+  color: #00D4FF;
+}
+
+/*-------------------------------------------------------------------contents----------------------------------------------------*/
+
+.content{
+  background-color:;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction:column;
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
+.content .title{
+  margin-top: 1rem;
+  color: #888888;
+  font-size: .6rem;
+  text-transform: uppercase;
+}
+
+.title h1 i{
+  margin-right: .4rem;
+  font-size: 2rem;
+  color: #00D4FF;
+}
+
+.table{
+  background-color: white;
+  padding: 1rem 1rem;
+}
+
+table{
+  margin: 1rem 1rem;
+}
+
+
+
+.table h1{
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  color: #323232;
+}
+
+.table table tr td{
+  width: 200px;
+}
+
+.table table tr{
+  height: 35px;
+  color: #323232;
+  font-size: .65rem;
+}
+
+.head td{
+  font-weight: bold;
+  color: #323232;
+  font-size: .8rem;
+}
+
+.table table tr td a{
+  display: inline;
+  margin-left: .5rem;
+}
+
+.table table tr td a i:hover{
+  transform: scale(1.8);
+}
+
+.edit-job-status{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.edit-job-status select{
+  font-size: .65rem;
+  border-radius: 10px;
+  margin-left: .2rem;
+  padding: .1rem .1rem;
+}
+
+.edit-job-status button{
+  background-color: white;
+  border: none;
+  padding: 0;
+  margin-left: .5rem;
+  cursor: pointer;
+}
+
+.edit-job-status button:hover{
+
+  transform: scale(1.5);
+}
